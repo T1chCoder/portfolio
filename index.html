@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" style="overflow: hidden">
+  <head>
+    <title>T1chCoder | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/icons/32x32/logo.svg" />
+    <link rel="alternate icon" type="image/png" href="/icons/32x32/logo.png" />
+    <link rel="apple-touch-icon" href="/icons/192x192/logo.png" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Showcase of coding projects, web development, and software solutions. Includes examples of frontend, backend, and fullstack work."
+    />
+    <meta
+      name="keywords"
+      content="T1chCoder, portfolio, developer, programmer, software engineer, coding projects, web development, applications, frontend, backend, fullstack, open source, GitHub, JavaScript, TypeScript, React, Node.js"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="T1chCoder" />
+    <meta name="copyright" content="© 2025 Portfolio — designed by T1chCoder" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+    <meta http-equiv="Pragma" content="cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta property="og:title" content="MindFlow" />
+    <meta
+      property="og:description"
+      content="Showcase of coding projects, web development, and software solutions. Includes examples of frontend, backend, and fullstack work."
+    />
+    <meta property="og:image" content="/icons/32x32/logo.svg" />
+    <meta property="og:url" content="https://t1chcoder.com" />
+    <meta property="og:site_name" content="T1chCoder | Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <script>
+      document.documentElement.classList.add("dark");
+    </script>
+    <style>
+      html,
+      body {
+        background: #0a0a0a;
+        color: white;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      #root {
+        height: 100%;
+      }
+
+      #splash {
+        position: fixed;
+        inset: 0;
+        background: #0a0a0a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+      }
+
+      #splash .logo {
+        width: 60vw;
+        max-width: 120px;
+        height: auto;
+        animation: pulse 1.5s infinite ease-in-out;
+      }
+
+      #splash .instant svg {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="splash" style="overflow: hidden">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color: #3b82f6" />
+              <stop offset="100%" style="stop-color: #a855f7" />
+            </linearGradient>
+          </defs>
+          <rect
+            width="32"
+            height="32"
+            rx="6.4"
+            ry="6.4"
+            fill="url(#gradient)"
+          />
+          <g transform="translate(5 5) scale(0.95)">
+            <path
+              d="m18 16 4-4-4-4"
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="m6 8-4 4 4 4"
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="m14.5 4-5 16"
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
