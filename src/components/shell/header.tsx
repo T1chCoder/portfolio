@@ -19,14 +19,14 @@ export function Header() {
       <motion.header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrollY > 50
-            ? "bg-background/80 backdrop-blur-md border-b border-border/50"
+            ? "bg-background backdrop-blur-md border-b border-border/50"
             : "bg-transparent"
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="container mx-auto px-4">
+        <div className="wrp">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-2 group">
@@ -118,7 +118,7 @@ export function Header() {
         {isOpen && (
           <>
             <motion.div
-              className="fixed inset-0 bg-background/80 backdrop-blur-md z-40"
+              className="fixed inset-0 bg-background backdrop-blur-md z-40"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -131,7 +131,7 @@ export function Header() {
               exit={{ y: -100, opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <nav className="container mx-auto px-4 py-8">
+              <nav className="wrp py-8">
                 <div className="flex flex-col gap-6">
                   {navItems.map((item, index) => (
                     <motion.a

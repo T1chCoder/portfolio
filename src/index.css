@@ -266,7 +266,7 @@ html {
 }
 
 * {
-  scrollbar-color: var(--muted) var(--background);
+  scrollbar-color: var(--scroll) var(--background);
 }
 
 *:hover,
@@ -279,7 +279,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--muted);
+  background-color: var(--scroll);
   border-radius: 4px;
 }
 
@@ -290,4 +290,8 @@ html {
 
 section {
   scroll-margin-top: 50px;
+}
+
+.wrp {
+  @apply container mx-auto px-4 2xl:px-32;
 }
