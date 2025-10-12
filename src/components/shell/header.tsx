@@ -18,8 +18,8 @@ export function Header() {
     <>
       <motion.header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden ${
-          scrollY > 50
-            ? "bg-background backdrop-blur-md border-b border-border/50"
+          scrollY > 50 || isOpen
+            ? "bg-background border-b border-border/50"
             : "bg-transparent"
         }`}
         initial={{ y: -100 }}
@@ -118,14 +118,14 @@ export function Header() {
         {isOpen && (
           <>
             <motion.div
-              className="fixed inset-0 bg-background backdrop-blur-md z-40"
+              className="fixed inset-0 bg-background/80 backdrop-blur-md z-40"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
             />
             <motion.div
-              className="fixed top-16 left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border/50 z-40 md:hidden"
+              className="fixed top-16 left-0 right-0 bg-background border-b border-border/50 z-40 md:hidden"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 0 }}
