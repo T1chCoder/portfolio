@@ -6,7 +6,7 @@ import { navItems } from "@/constants/header";
 
 export function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-background to-secondary/30 border-t border-border/50">
+    <footer className="relative bg-gradient-to-b from-background to-secondary/30 border-t border-border/50 overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div

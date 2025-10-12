@@ -3,7 +3,7 @@ import cases from "@/data/case";
 
 export default function Section() {
   return (
-    <section id="client-cases" className="wrp py-20 sm:px-6 lg:px-8">
+    <section id="client-cases" className="wrp py-20 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-gradient-primary">

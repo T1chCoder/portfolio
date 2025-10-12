@@ -58,7 +58,7 @@ export default function Section() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-b from-secondary/20 to-background"
+      className="py-20 bg-gradient-to-b from-secondary/20 to-background overflow-hidden"
     >
       <div className="wrp">
         <motion.div
