@@ -62,7 +62,7 @@ export default function Section() {
         />
       </div>
 
-      <div className="wrp relative z-10 pt-16 md:pt-24 lg:pt-[7.5rem] pb-32 mt-16">
+      <div className="wrp relative z-10 pt-20 md:pt-24 lg:pt-[7.5rem] pb-32 mt-16">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           {/* Content */}
           <motion.div
