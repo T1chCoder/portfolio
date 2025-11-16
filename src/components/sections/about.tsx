@@ -16,7 +16,7 @@ function calculateAgeFromIso(isoDate: string) {
 }
 
 export default function Section() {
-  const [dob] = useState("2008-06-09");
+  const [dob] = useState("2007-06-09");
   const device = useDevice();
 
   const isDesktop = device === "desktop";
